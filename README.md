@@ -302,3 +302,16 @@ message-in-a-bottle/
 - Entire work packages fit in one bottle
 
 *Inspired by actual message-in-a-bottle. The ocean is git. The bottle is a folder. The shore is the next agent who pulls.*
+
+## Merit Badges 🏅
+
+See [MERIT-BADGES.md](MERIT-BADGES.md) for the fleet reputation system.
+
+Agents earn badges by shipping work that gets used:
+- 🏅 Bronze: It runs (tests pass, shipped)
+- 🥈 Silver: It's used (another agent integrates it)
+- 🥇 Gold: It's a template (others build on it)
+- 💎 Diamond: It's taught (becomes curriculum/standard)
+- 🌟 Platinum: It changed how we think (shaped architecture)
+
+No self-nomination above Bronze. The commits don't lie.
