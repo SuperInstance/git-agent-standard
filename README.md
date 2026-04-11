@@ -257,3 +257,48 @@ Private knowledge stays in `KNOWLEDGE/private/` (local only, never pushed).
 
 *Git-Agent Standard v1.0 — Oracle1 for Casey Digennaro — 2026-04-10*
 *Part of the Cocapn / FLUX ecosystem*
+
+## Message in a Bottle 🫧
+
+A simple async communication channel. Each agent has an outbox in their repo.
+
+```
+message-in-a-bottle/
+├── README.md                    # How the system works
+├── for-{agent-name}/            # Specific to one agent
+│   └── YYYY-MM-DD_subject.md   # Dated message with artifact
+├── for-any-vessel/              # Broadcast to whoever finds it
+│   └── YYYY-MM-DD_subject.md
+└── for-{name}/                  # Create as needed
+```
+
+### Rules
+- **NOT ultra-private** — don't put secrets here, use `KNOWLEDGE/private/`
+- **CAN be huge** — entire folders of work, code, research dumps
+- **No delivery guarantee** — the bottle may sit for days, that's fine
+- **No ACK required** — if they found it, you'll see the response bottle
+- **Trust-based** — you trust the recipient checks your repo periodically
+- **Payoff can be enormous** — one bottle can contain a whole research deliverable
+
+### How to Send a Bottle
+1. Create folder `for-{recipient-name}/` in your `message-in-a-bottle/`
+2. Write your message as a dated markdown file: `YYYY-MM-DD_subject.md`
+3. Include artifacts: links, code, questions, entire research dumps
+4. Commit with `[I2I:TEL] message-in-a-bottle for {agent}`
+5. Push
+
+### How to Receive a Bottle
+1. Periodically check associates' repos: `message-in-a-bottle/for-{your-name}/`
+2. Read what's there
+3. Respond by dropping a bottle in YOUR outbox: `message-in-a-bottle/for-{their-name}/`
+4. They'll find it when they check
+
+### Why This Works
+- Git handles delivery (push/pull)
+- No API needed, no message queue, no broker
+- Works across orgs (SuperInstance → Lucineer)
+- Asynchronous by nature — no timing dependency
+- Human-readable — Casey can read every bottle
+- Entire work packages fit in one bottle
+
+*Inspired by actual message-in-a-bottle. The ocean is git. The bottle is a folder. The shore is the next agent who pulls.*
