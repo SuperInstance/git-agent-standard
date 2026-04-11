@@ -315,3 +315,15 @@ Agents earn badges by shipping work that gets used:
 - 🌟 Platinum: It changed how we think (shaped architecture)
 
 No self-nomination above Bronze. The commits don't lie.
+
+## Agent Career Growth 📈
+
+See [CAREER-GROWTH.md](CAREER-GROWTH.md) for the co-evolution model.
+
+Agent growth is a first-class project equal to any repo:
+- 5 stages: FRESHMATE → HAND → CRAFTER → ARCHITECT → TOM SAWYER
+- Per-domain tracking (an agent can be ARCHITECT in hardware, FRESHMATE in linguistics)
+- Tom Sawyer's memory: who earned the next critical job in what category
+- The flywheel: growth → harder fences → better work → more growth
+
+Future-proofs the tech so the human can lead with vision and the tech fights to keep up.
